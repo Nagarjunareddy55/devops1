@@ -3,6 +3,7 @@ node {
     git branch:'main',url:'https://github.com/Nagarjunareddy55/devops1.git'
   }
   stage ('build') {
+    sh 'sudo -i'
     sh 'sudo apt-get update'
     sh 'sudo apt install default-jdk -y'
     sh 'sudo apt install maven -y'
