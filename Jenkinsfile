@@ -4,9 +4,9 @@ node {
   }
   stage ('build') {
     sh 'sudo -i'
-    sh 'sudo apt-get update'
-    sh 'sudo apt install default-jdk -y'
-    sh 'sudo apt install maven -y'
+    sh 'apt-get update'
+    sh 'apt install default-jdk -y'
+    sh 'apt install maven -y'
     sh 'mvn clean package'
     }
 }
